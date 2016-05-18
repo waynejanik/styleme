@@ -1,19 +1,24 @@
-<p id="notice"><%= notice %></p>
 
-<p>
+<h2>
   <strong>Product:</strong>
   <%= @product.product %>
-</p>
+</h2>
 
-<p>
+<h3>
   <strong>Price:</strong>
   <%= @product.price %>
-</p>
+</h3>
 
 <p>
   <strong>Description:</strong>
   <%= @product.description %>
 </p>
 
-<%= link_to 'Edit', edit_product_path(@product) %> |
-<%= link_to 'Back', products_path %>
+<%= link_to 'Back', products_path %> |
+
+<% if user_signed_in? %>
+    <% if @product.user_id == current_user.id  %>
+        <%= link_to 'Edit', edit_product_path(@product) %> |
+        <%= link_to 'Destroy', method: :delete, data: { confirm: 'Are you sure?' } %>
+    <% end %>
+<% end %>

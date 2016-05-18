@@ -115,7 +115,10 @@
     <orderEntry type="library" scope="PROVIDED" name="activerecord (v4.2.6, ruby-2.1.5-p273) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="activesupport (v4.2.6, ruby-2.1.5-p273) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="arel (v6.0.3, ruby-2.1.5-p273) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="autoprefixer-rails (v6.3.6.1, ruby-2.1.5-p273) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="bcrypt (v3.1.11, ruby-2.1.5-p273) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="binding_of_caller (v0.7.2, ruby-2.1.5-p273) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="bootstrap-sass (v3.3.6, ruby-2.1.5-p273) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="builder (v3.2.2, ruby-2.1.5-p273) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="bundler (v1.9.1, ruby-2.1.5-p273) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="byebug (v9.0.3, ruby-2.1.5-p273) [gem]" level="application" />
@@ -124,6 +127,7 @@
     <orderEntry type="library" scope="PROVIDED" name="coffee-script-source (v1.10.0, ruby-2.1.5-p273) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="concurrent-ruby (v1.0.2, ruby-2.1.5-p273) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="debug_inspector (v0.0.2, ruby-2.1.5-p273) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="devise (v4.1.1, ruby-2.1.5-p273) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="erubis (v2.7.0, ruby-2.1.5-p273) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="execjs (v2.6.0, ruby-2.1.5-p273) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="globalid (v0.3.6, ruby-2.1.5-p273) [gem]" level="application" />
@@ -139,6 +143,7 @@
     <orderEntry type="library" scope="PROVIDED" name="minitest (v5.9.0, ruby-2.1.5-p273) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="multi_json (v1.12.0, ruby-2.1.5-p273) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="nokogiri (v1.6.7.2, ruby-2.1.5-p273) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="orm_adapter (v0.5.0, ruby-2.1.5-p273) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rack (v1.6.4, ruby-2.1.5-p273) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rack-test (v0.6.3, ruby-2.1.5-p273) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rails (v4.2.6, ruby-2.1.5-p273) [gem]" level="application" />
@@ -148,9 +153,11 @@
     <orderEntry type="library" scope="PROVIDED" name="railties (v4.2.6, ruby-2.1.5-p273) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rake (v11.1.2, ruby-2.1.5-p273) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rdoc (v4.2.2, ruby-2.1.5-p273) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="responders (v2.2.0, ruby-2.1.5-p273) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="sass (v3.4.22, ruby-2.1.5-p273) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="sass-rails (v5.0.4, ruby-2.1.5-p273) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="sdoc (v0.4.1, ruby-2.1.5-p273) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="simple_form (v3.2.1, ruby-2.1.5-p273) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="sprockets (v3.6.0, ruby-2.1.5-p273) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="sprockets-rails (v3.0.4, ruby-2.1.5-p273) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="sqlite3 (v1.3.11, ruby-2.1.5-p273) [gem]" level="application" />
@@ -161,6 +168,11 @@
     <orderEntry type="library" scope="PROVIDED" name="tzinfo (v1.2.2, ruby-2.1.5-p273) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="tzinfo-data (v1.2016.4, ruby-2.1.5-p273) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="uglifier (v3.0.0, ruby-2.1.5-p273) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="warden (v1.2.6, ruby-2.1.5-p273) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="web-console (v2.3.0, ruby-2.1.5-p273) [gem]" level="application" />
+  </component>
+  <component name="RModuleSettingsStorage">
+    <LOAD_PATH number="0" />
+    <I18N_FOLDERS number="1" string0="$MODULE_DIR$/config/locales" />
   </component>
 </module>
