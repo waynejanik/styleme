@@ -4,7 +4,19 @@ class ProductsController < ApplicationController
   # GET /products
   # GET /products.json
   def index
-    @products = Product.all
+
+    if !params[:category].blank?
+      @category_id = Category.find_by(name: params[:category]).id
+      @products = Product.where(:category_id => @category_id)
+      elsif !params[:size].blank?
+        @size_id = Size.find_by(name: params[:size]).id
+        @products = Product.where(:size_id => @size_id)
+    else
+      @products = Product.all
+    end
+
+
+
   end
 
   # GET /products/1
@@ -22,6 +34,9 @@ class ProductsController < ApplicationController
 
   # GET /products/1/edit
   def edit
+    @categories = Category.all.map{ |c| [c.name, c.id] }
+    @manufacturers = Manufacturer.all.map{ |m| [m.name, m.id] }
+    @sizes = Size.all.map{ |s| [s.name, s.id] }
   end
 
   # POST /products
@@ -48,6 +63,9 @@ class ProductsController < ApplicationController
   # PATCH/PUT /products/1
   # PATCH/PUT /products/1.json
   def update
+    @categories = Category.all.map{ |c| [c.name, c.id] }
+    @manufacturers = Manufacturer.all.map{ |m| [m.name, m.id] }
+    @sizes = Size.all.map{ |s| [s.name, s.id] }
     respond_to do |format|
       if @product.update(product_params)
         format.html { redirect_to @product, notice: 'Product was successfully updated.' }
@@ -77,6 +95,6 @@ class ProductsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def product_params
-      params.require(:product).permit(:product, :price, :description)
+      params.require(:product).permit(:product, :price, :description, :category_id, :manufacturer_id, :size_id)
     end
 end

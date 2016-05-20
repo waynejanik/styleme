@@ -1,0 +1,8 @@
+<h1>Show Size</h1>
+
+<h2><%= @size.name %></h2>
+
+<%= link_to "Back", sizes_path %> |
+
+<%= link_to "Edit", edit_size_path(@size) %> |
+<%= link_to "Delete", size_path(@size), method: :delete, data: { confirm: "Are you sure?"} %>

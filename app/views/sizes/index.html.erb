@@ -1,0 +1,7 @@
+<h1>Listing Sizes</h1>
+
+<% @sizes.each do |size| %>
+    <h3><%= link_to size.name, size_path(size) %></h3>
+<% end %>
+
+<%= link_to "Add Size", new_size_path %>
