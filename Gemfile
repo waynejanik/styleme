@@ -62,3 +62,15 @@ gem 'bootstrap-sass', '~> 3.3', '>= 3.3.6'
 #
 gem 'devise', '~> 4.1', '>= 4.1.1'
 
+# Deployment for Heroku
+
+group :development do
+# Use sqlite3 as the database for Active Record
+gem 'sqlite3'
+end
+
+group :production do
+  gem 'pg'
+  gem 'rails_12factor'
+end
+
