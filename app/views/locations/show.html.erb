@@ -1,0 +1,12 @@
+<h1>Show Location</h1>
+
+<h2><%= @location.name %></h2>
+
+<%= link_to "Back", locations_path %> |
+
+<%= link_to "Edit", edit_location_path(@location) %> |
+<%= link_to "Delete", location_path(@location), method: :delete, data: { confirm: "Are you sure?"} %>
+
+
+
+

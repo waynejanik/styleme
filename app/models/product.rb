@@ -4,6 +4,7 @@ class Product < ActiveRecord::Base
   belongs_to :category
   belongs_to :manufacturer
   belongs_to :size
+  belongs_to :location
 
 
 

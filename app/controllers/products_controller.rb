@@ -11,6 +11,9 @@ class ProductsController < ApplicationController
       elsif !params[:size].blank?
         @size_id = Size.find_by(name: params[:size]).id
         @products = Product.where(:size_id => @size_id)
+    elsif !params[:location].blank?
+      @location_id = Location.find_by(name: params[:location]).id
+      @products = Product.where(:location_id => @location_id)
     else
       @products = Product.all
     end
@@ -28,6 +31,7 @@ class ProductsController < ApplicationController
   def new
     @product = current_user.products.build
     @categories = Category.all.map{ |c| [c.name, c.id] }
+    @locations = Location.all.map{ |l| [l.name, l.id] }
     @manufacturers = Manufacturer.all.map{ |m| [m.name, m.id] }
     @sizes = Size.all.map{ |s| [s.name, s.id] }
   end

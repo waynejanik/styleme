@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   resources :categories
   resources :manufacturers
   resources :sizes
+  resources :locations
 
 
   root 'products#index'
