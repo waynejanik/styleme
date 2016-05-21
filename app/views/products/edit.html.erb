@@ -23,6 +23,8 @@
       <%= f.select :category_id, @categories %>
       <%= f.select :manufacturer_id, @manufacturers %>
       <%= f.select :size_id, @sizes %>
+      <%= f.select :location_id, @locations %>
+
 
     </div>
 
@@ -33,6 +35,10 @@
     <div class="field">
 
       <%= f.input :description %>
+    </div>
+    <div class="field">
+
+      <%= f.file_field :prod_image %>
     </div>
     <div class="actions">
       <%= f.button :submit %>

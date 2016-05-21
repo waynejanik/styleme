@@ -39,6 +39,7 @@ class ProductsController < ApplicationController
   # GET /products/1/edit
   def edit
     @categories = Category.all.map{ |c| [c.name, c.id] }
+    @locations = Location.all.map{ |l| [l.name, l.id] }
     @manufacturers = Manufacturer.all.map{ |m| [m.name, m.id] }
     @sizes = Size.all.map{ |s| [s.name, s.id] }
   end
@@ -99,6 +100,11 @@ class ProductsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def product_params
-      params.require(:product).permit(:product, :price, :description, :category_id, :manufacturer_id, :size_id, :location_id)
+      params.require(:product).permit(:product, :price, :description, :category_id, :manufacturer_id, :size_id, :location_id, :prod_image)
     end
+
+  def find_product
+    @product = Product.find(params[:id])
+  end
+
 end

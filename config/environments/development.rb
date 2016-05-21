@@ -38,4 +38,23 @@ Rails.application.configure do
 
   # Raises error for missing translations
   # config.action_view.raise_on_missing_translations = true
+
+  Paperclip.options[:command_path] = 'C:\Program Files (x86)\GnuWin32'
+  Paperclip.options[:command_path] = '/usr/local/bin/'
+
+  Paperclip.options[:content_type_mappings] = {
+      :jpg => 'image/jpeg',
+      :png => 'image/png',
+      :gif => 'image/gif'
+  }
+
+  require 'paperclip/media_type_spoof_detector'
+  module Paperclip
+    class MediaTypeSpoofDetector
+      def spoofed?
+        false
+      end
+    end
+  end
+
 end

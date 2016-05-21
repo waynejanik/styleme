@@ -1,23 +1,41 @@
 
-<h2>
-  <strong>Product:</strong>
-  <%= @product.product %>
-</h2>
+<div class="row">
+    <div class="col-sm-5 col-md-4 col-lg-3">
+        <p>
+             <%=  image_tag @product.prod_image.url(:medium), class: 'prodShow' %>
+        </p>
 
-<h3>
-  <strong>Price:</strong>
-  <%= @product.price %>
-</h3>
+    </div>
+    <div class="col-sm-7 col-md-8 col-lg-9">
+        <h2>
+            <strong>Product:</strong>
+            <%= @product.product %>
+        </h2>
 
-<h4>
-  <strong>Size:</strong>
-  <%= @product.size.name %>
-</h4>
+        <h3>
+             <strong>Price:</strong>
+            <%= @product.price %>
+        </h3>
 
-<p>
-  <strong>Description:</strong>
-  <%= @product.description %>
-</p>
+        <h4>
+            <strong>Size:</strong>
+            <%= @product.size.name %>
+        </h4>
+
+        <p>
+            <strong>Description:</strong>
+            <%= @product.description %>
+        </p>
+    </div>
+</div>
+
+<div class="row">
+  <div class="col-sm-5 col-md-4 col-lg-3">
+
+    <!-- Where teh reviews and ratings will go  -->
+
+  </div>
+</div>
 
 <%= link_to 'Back', products_path %> |
 

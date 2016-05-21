@@ -61,6 +61,10 @@ gem 'bootstrap-sass', '~> 3.3', '>= 3.3.6'
 #
 gem 'devise', '~> 4.1', '>= 4.1.1'
 
+# Gem for pictures
+
+gem 'paperclip', '~> 4.3', '>= 4.3.6'
+
 # Deployment for Heroku
 
 group :development do
