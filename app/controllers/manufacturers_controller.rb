@@ -1,6 +1,7 @@
 class ManufacturersController < ApplicationController
   before_action :find_manufacturer, only: [:show, :edit, :update, :destroy]
 
+
   def index
     @manufacturers = Manufacturer.all.order(:name)
   end
@@ -34,16 +35,16 @@ class ManufacturersController < ApplicationController
   end
 
   def destroy
-    @manufacturer.destroy
+    @size.destroy
     redirect_to manufacturers_path
   end
 
   private
-  def category_params
+  def manufacturer_params
     params.require(:manufacturer).permit(:name)
   end
 
-  def find_manufacturer
+  def find_size
     @manufacturer = Manufacturer.find(params[:id])
   end
 
