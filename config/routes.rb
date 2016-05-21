@@ -1,4 +1,14 @@
 Rails.application.routes.draw do
+  get 'pages/start'
+
+  get 'pages/home'
+
+  get 'pages/about'
+
+  get 'pages/contact'
+
+  get 'pages/help'
+
   devise_for :users
   resources :products
   resources :categories

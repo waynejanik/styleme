@@ -9,7 +9,7 @@
 
 <h1>Listing Products</h1>
 
-<table>
+<table >
   <thead>
     <tr>
       <th>Product</th>
@@ -24,7 +24,7 @@
     <% @products.each do |product| %>
       <tr>
         <td><%= link_to product.product, product %></td>
-        <td><%= product.price %></td>
+        <td><%= number_to_currency(product.price) %></td>
         <td><%= product.description %></td>
         <td><%= product.size_id %></td>
 
