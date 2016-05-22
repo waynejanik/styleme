@@ -9,12 +9,18 @@ Rails.application.routes.draw do
 
   get 'pages/help'
 
+  get 'pages/loginpage'
+
+
+
   devise_for :users
+
   resources :products
   resources :categories
   resources :manufacturers
   resources :sizes
   resources :locations
+
 
 
   root 'pages#start'
